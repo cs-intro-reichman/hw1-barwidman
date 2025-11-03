@@ -10,7 +10,7 @@ public class NumWords {
 
         int inputNumber = Integer.parseInt(args[0]);
 
-        int hundreds = inputNumber % 1000 / 100;
+        int hundreds = inputNumber % 1000;
         int tens = inputNumber % 100 / 10;
         int units = inputNumber % 10;
         System.out.println(hundreds + " hundreds, " + tens + " tens, and " + units + " ones.");
