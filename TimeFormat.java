@@ -14,7 +14,8 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 
         String partOfDay = hours >= 12 ? "PM" : "AM";
+        int hoursSection = hours == 12 ? hours : hours % 12;
 
-        System.out.println(hours % 12  + ":" + String.format("%02d", minutes) + " " + partOfDay);
+        System.out.println(hoursSection  + ":" + String.format("%02d", minutes) + " " + partOfDay);
 	}
 }
