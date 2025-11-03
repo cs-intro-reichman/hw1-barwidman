@@ -13,7 +13,7 @@ public class Bill3 {
         String name3 = args[2];
         int totalPayment = Integer.parseInt(args[3]);
         double toPayForEach = Math.ceil((double) totalPayment / 3);
-        String formatLine = String.format("Dear %s, %s, and %s: pay %.2f Shekels each.", name3, name2, name1, toPayForEach);
+        String formatLine = String.format("Dear %s, %s, and %s: pay " + toPayForEach + " Shekels each.", name3, name2, name1);
         System.out.println(formatLine);
 	}
 }
