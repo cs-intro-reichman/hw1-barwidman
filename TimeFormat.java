@@ -15,6 +15,6 @@ public class TimeFormat {
 
         String partOfDay = hours >= 12 ? "PM" : "AM";
 
-        System.out.println("Time is: " + hours % 12  + ":" + String.format("%02d", minutes) + " " + partOfDay);
+        System.out.println(hours % 12  + ":" + String.format("%02d", minutes) + " " + partOfDay);
 	}
 }
