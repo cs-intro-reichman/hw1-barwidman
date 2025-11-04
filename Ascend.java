@@ -4,10 +4,10 @@ import java.util.Random;
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		// Replace this comment with your code
-        int firstNumber = (int)(Math.random() * 100);
-        int secondNumber = (int)(Math.random() * 100);
-        int thirdNumber = (int)(Math.random() * 100);
+        int lim = Integer.parseInt(args[0]);
+        int firstNumber = (int)(Math.random() * lim);
+        int secondNumber = (int)(Math.random() * lim);
+        int thirdNumber = (int)(Math.random() * lim);
         int minValue = Math.min(Math.min(firstNumber, secondNumber),  thirdNumber);
         int maxValue = Math.max(Math.max(firstNumber, secondNumber),  thirdNumber);
         int middleValue = (firstNumber + secondNumber + thirdNumber) - minValue - maxValue;
